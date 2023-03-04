@@ -2,21 +2,20 @@
 
 Custom HTML pages for cloudflare pro and higher
 
-https://cloudflare-pages.joshsevero.dev/waf_block.html
-----
-https://cloudflare-pages.joshsevero.dev/waf.html
-----
-https://cloudflare-pages.joshsevero.dev/under_attack.html
-----
-https://cloudflare-pages.joshsevero.dev/timedout.html
-----
-https://cloudflare-pages.joshsevero.dev/managed_challange.html
-----
-https://cloudflare-pages.joshsevero.dev/ip_block.html
-----
-https://cloudflare-pages.joshsevero.dev/always_online.html
-----
-https://cloudflare-pages.joshsevero.dev/500.html
-----
-https://cloudflare-pages.joshsevero.dev/1000.html
-----
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/ip_block.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/waf_block.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/500.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/1000.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/always_online.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/waf.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/managed_challange.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/under_attack.html
+
+# https://cdn.joshsevero.dev/Static/Cloudflare/Custom%20Pages/rate_limit.html
