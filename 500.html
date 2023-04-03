@@ -1,183 +1,168 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=abril-fatface:400|rubik:600,800i,900i">
+  <title>Timed Out</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: #1d1d1d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      font-family: 'Abril-Fatface', 'Rubik';
+    }
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Timed Out</title>
-    <meta name="theme-color" content="#c19aa4" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #2d2d2d;
+      width: 40vw;
+      height: fit-content;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 4em;
+    }
+    
+    img {
+      width: 8em;
+    }
+    
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+    .color {
+      color: #faec84;
+    }
+    
+    h1, h2, h4 {
+      margin-left: 32px;
+    }
+    
+    h4 {
+      margin-top: 1em;
+      color: #c9c9c9 !important;
+    }
 
-      body {
-        background: #1d1d1d;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        flex-direction: column;
-        font-family: "Mulish", sans-serif;
-      }
+    h2 {
+      margin-top: 1em;
+      font-size: 1em;
+      color: #c9c9c9;
+      font-weight: 200;
+    }
 
+    .rig {
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
+      margin-left: 32px;
+    }
+
+    .bottom {
+      background: #1f1f1f;
+      width: 100%;
+      height: fit-content;
+      padding: 1em;
+    }
+
+    .util {
+      font-size: 0.8em;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .info {
+      margin-left: 4px;
+      color: #c9c9c9;
+      font-weight: 200;
+    }
+
+    @media screen and (min-width: 200px) and (max-width: 1024px) {
       main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background: #2d2d2d;
-        width: 40vw;
+        width: 90vw;
         height: fit-content;
         border-radius: 8px;
         overflow: hidden;
+        text-align: center;
       }
 
       .top {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 4em;
       }
-
       img {
-        width: 8em;
+        width: 4em;
       }
 
-      h1 {
-        font-size: 2em;
-        color: #fff;
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
       }
 
-      .orange {
-        color: #faec84;
-      }
-      h1,
-      h2,
-      h4 {
-        margin-left: 32px;
-      }
-
-      h4 {
-        margin-top: 1em;
-        color: #c9c9c9 !important;
-      }
-
-      h2 {
-        margin-top: 1em;
-        font-size: 1em;
-        color: #c9c9c9;
-        font-weight: 200;
+      h1, h2, h4 {
+        margin-left: 0;
       }
 
       .rig {
-        border-left: 1px solid rgba(255, 255, 255, 0.25);
-        margin-left: 32px;
+        border-left: none;
+        margin-left: 0;
+        margin-top: 2em;
       }
-
-      .bottom {
-        background: #1f1f1f;
-        width: 100%;
-        height: fit-content;
-        padding: 1em;
-      }
-
-      .util {
-        font-size: 0.8em;
-        font-weight: 500;
-        color: #fff;
-      }
-
-      .info {
-        margin-left: 4px;
-        color: #c9c9c9;
-        font-weight: 200;
-      }
-
-      @media screen and (min-width: 200px) and (max-width: 1024px) {
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background: #2d2d2d;
-          width: 90vw;
-          height: fit-content;
-          border-radius: 8px;
-          overflow: hidden;
-          text-align: center;
-        }
-
-        .top {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 4em;
-        }
-
-        img {
-          width: 4em;
-        }
-
-        .top {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 3em;
-        }
-
-        h1,
-        h2,
-        h4 {
-          margin-left: 0;
-        }
-
-        .rig {
-          border-left: none;
-          margin-left: 0;
-          margin-top: 2em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="top">
-        <div class="rig">
-          <h1>
-            <span class="orange"
-              ><script type="text/javascript">
-                document.write(document.location.hostname);
-              </script></span
-            >
-            has timed out.
-          </h1>
-          <h2>
-            Reloading the page usually fixes it. If requested, the box below has
-            more info about what happened.
-            <a href="https://status.joshsevero.dev" class="orange">Status Page</a>
-          </h2>
-          <h4>::CLOUDFLARE_ERROR_500S_BOX::</h4>
-        </div>
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="top">
+      <div eclass="rig">
+        <h1>
+          <span class="color">
+            <script type="text/javascript">document.write(document.location.hostname)</script>
+          </span>
+          has timed out.
+        </h1>
+        <h2>
+          Reloading the page usually fixes it. If requested, the box below has more information about what happened.
+          <a href="https://status.joshsevero.dev" class="color">Status Page</a>
+        </h2>
+        <h4>::CLOUDFLARE_ERROR_500S_BOX::</h4>
       </div>
-      <div class="bottom">
-        <span class="util"
-          >Your access ID is <span class="info">::RAY_ID::</span></span
-        >
-      </div>
-    </main>
-  </body>
+    </div>
+    <div class="bottom">
+      <span class="util">
+        Your access ID is: <span class="info">::RAY_ID::</span>
+      </span>
+    </div>
+  </main>
+</body>
 </html>
